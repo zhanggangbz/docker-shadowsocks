@@ -10,4 +10,5 @@ RUN apt-get update && \
 RUN pip install shadowsocks==2.8.2
 
 # Configure container to run as an executable
+EXPOSE 8388
 ENTRYPOINT ["/usr/local/bin/ssserver"]
